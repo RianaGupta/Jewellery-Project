@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+* {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --animate-forfade: forfade 2s ease;
+
+  @keyframes forfade {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@theme {
+  --animate-womenfade: womenfade 2s ease;
+
+  @keyframes womenfade {
+    from {
+      opacity: 0;
+      transform: translateX(-100px)
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0)
+    }
+  }
+}
+
+@theme {
+  --animate-textfade: textfade 4s ease;
+
+  @keyframes textfade {
+    from {
+      opacity: 0;
+      transform: translateX(5px);
+    }
+  }
+}
+
+@theme {
+  --animate-neckAnimation: neckAnimation 2s;
+
+  @keyframes neckAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(40px)
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0)
+    }
+  }
+}
+
+@theme {
+  --animate-neckAnimation1: neckAnimation1 3s;
+
+  @keyframes neckAnimation1 {
+    from {
+      opacity: 0;
+      transform: translateX(70px)
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0)
+    }
+  }
+}
+
+@theme {
+  --animate-neckAnimation2: neckAnimation2 3s;
+
+  @keyframes neckAnimation2 {
+    from {
+      opacity: 0;
+      transform: translateX(-70px)
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0)
+    }
+  }
+}
+
+@theme {
+  --animate-purseDetail: purseDetail 1s ease 3s forwards;
+
+  @keyframes purseDetail {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+/* body{
+  background-color: rgb(99, 5, 5);
+  rgb(231_34_34),_rgb(78_3_3))
+} */
+body {
+  background-color: rgb(221, 217, 217);
+}
