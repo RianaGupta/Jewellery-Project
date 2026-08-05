@@ -1,5 +1,6 @@
 import React from 'react'
-
+import About from '../pages/About'
+import { Link } from 'react-router-dom'
 export default function Navbar() {
     return (
         <div>
@@ -14,31 +15,33 @@ export default function Navbar() {
             <nav className="relative  bg-[radial-gradient(circle_at_center,_rgb(153_7_7),_rgb(84_2_2))] flex justify-center lg:justify-between lg:flex-wrap xl:flex-nowrap items-center sm:items-stretch pt-[50px] pb-[30px] sm:p-0 h-[50px] sm:h-auto w-full brightness-110">
                 {/* <i className=" lg:hidden fa-solid fa-bars text-[rgb(210_204_204)] "></i> */}
 
-             
-                    <div className="align-center text-center lg:text-left lg:w-full xl:w-auto">
-                        <h2 className=" text-[30px]  tracking-[3px] font-light pt-[15px] pr-0 pb-[15px] pl-[50px] [text-shadow:3px_2px_4px_rgba(0,0,0,0.65)] justify-stretch brightness-300 font-['Cormorant_Garamond']">
-                            <span className="text-[rgb(219_210_210)]  " >LUSTRE</span>
-                            <span className="text-[rgb(234_8_8)]  " >ASH</span>
-                        </h2>
-                    </div>
 
-                   
-                        <ul className="hidden lg:flex xl:w-auto lg:w-fit lg:ml-[30px] xl:ml-0 lg:mt-[10px]  xl:mt-[30px] mr-[10px] list-none gap-[30px] font-['Cormorant_Garamond']">
-                            <li><a className="text-[13px] tracking-[3px] text-[rgb(206_199_199)] pb-[3px] pr-[10px] hover:text-white hover:border-b-1 border-red-500 " href="#">STYLE QUIZ</a></li>
-                            <li><a className="text-[13px] tracking-[3px] text-[rgb(206_199_199)] pb-[3px] pr-[10px] hover:text-white hover:border-b-1 border-red-500 " href="#archieve">COLLECTION</a></li>
-                            <li><a className="text-[13px] tracking-[3px] text-[rgb(206_199_199)] pb-[3px] pr-[10px] hover:text-white hover:border-b-1 border-red-500 " href="#care"> ADORNMENT CARE</a></li>
-                            <li><a className="text-[13px] tracking-[3px] text-[rgb(206_199_199)] pb-[3px] pr-[10px] hover:text-white hover:border-b-1 border-red-500 " href="#about">ABOUT US</a></li>
-                        </ul>
+                <div className="align-center text-center lg:text-left lg:w-full xl:w-auto">
+                    <h2 className=" text-[30px]  tracking-[3px] font-light pt-[15px] pr-0 pb-[15px] pl-[50px] [text-shadow:3px_2px_4px_rgba(0,0,0,0.65)] justify-stretch brightness-300 font-['Cormorant_Garamond']">
+                        <span className="text-[rgb(219_210_210)]  " >LUSTRE</span>
+                        <span className="text-[rgb(234_8_8)]  " >ASH</span>
+                    </h2>
+                </div>
 
 
-                        <button className="hidden lg:flex bg-[rgba(27, 24, 24, 0.3)] lg:mt-[5px] lg:mb-[20px] xl:mt-[20px] mr-0 xl:mb-[20px] rl-[20px] p-[9px]  border-1 border-[rgb(234,8,8)] rounded-[9px] cursor-pointer ">
-                            <i className="fa-solid fa-play text-[rgb(173,43,43)] pt-[4px] pr-[20px] text-[11px]"></i>
-                            <p className=" tracking-[2px] text-[#fb7185] text-[11px] font-['Cormorant_Garamond']">LOGIN</p>
-                        </button>
+                <ul className="hidden lg:flex xl:w-auto lg:w-fit lg:ml-[30px] xl:ml-0 lg:mt-[10px]  xl:mt-[30px] mr-[10px] list-none gap-[30px] font-['Cormorant_Garamond']">
+                    <li><a className="text-[13px] tracking-[3px] text-[rgb(206_199_199)] pb-[3px] pr-[10px] hover:text-white hover:border-b-1 border-red-500 " href="#">STYLE QUIZ</a></li>
+                    <li><a className="text-[13px] tracking-[3px] text-[rgb(206_199_199)] pb-[3px] pr-[10px] hover:text-white hover:border-b-1 border-red-500 " href="#archieve">COLLECTION</a></li>
+                    <li><a className="text-[13px] tracking-[3px] text-[rgb(206_199_199)] pb-[3px] pr-[10px] hover:text-white hover:border-b-1 border-red-500 " href="#care"> ADORNMENT CARE</a></li>
+                    <Link to="/about">
+                        <li><a className="text-[13px] tracking-[3px] text-[rgb(206_199_199)] pb-[3px] pr-[10px] hover:text-white hover:border-b-1 border-red-500 " >ABOUT US</a></li>
+
+                    </Link>
+                </ul>
 
 
-                        <i className="fa-solid fa-bag-shopping text-[rgb(210,204,204)] absolute right-0 ml-[10px] lg:static mt-[30px] lg:mt-[10px] xl:mt-[30px] mr-[50px] mb-[30px] text-[20px] "></i>
-              
+                <button className="hidden lg:flex bg-[rgba(27, 24, 24, 0.3)] lg:mt-[5px] lg:mb-[20px] xl:mt-[20px] mr-0 xl:mb-[20px] mr-[40px] rl-[20px] p-[9px]  border-1 border-[rgb(234,8,8)] rounded-[9px] cursor-pointer ">
+                    <i className="fa-solid fa-play text-[rgb(173,43,43)] pt-[4px] pr-[20px] text-[11px]"></i>
+                    <p className=" tracking-[2px] text-[#fb7185] text-[11px] font-['Cormorant_Garamond']">LOGIN</p>
+                </button>
+
+
+
             </nav>
 
         </div>
