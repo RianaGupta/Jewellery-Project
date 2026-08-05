@@ -9,7 +9,7 @@ export default function Section() {
     <div>
     
 
-      <section className="min-h-screen bg-gradient-to-b from-[#350505] via-[#220303] via-60% to-[#050505] py-10">
+      <section className="min-h-screen bg-gradient-to-b from-[#350505] via-[#220303] via-60% to-[#050505] py-10 lg:pb-30">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex flex-col lg:flex-row gap-8">
 

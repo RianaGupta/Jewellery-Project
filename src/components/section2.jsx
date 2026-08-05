@@ -1,4 +1,7 @@
 import React from 'react'
+import Category from '../pages/Category';
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Section from './section';
 import neck1 from "../assets/neck1.png";
 import set1 from "../assets/set1.png";
@@ -25,28 +28,25 @@ export default function Section2() {
                 <div className='min-h-screen bg-yellow w-[90%] ml-[5%] mr-[5%]'>
 
                     <div className='flex'>
-                        <div className='w-[0.1px] h-[13vh] bg-red-700 mr-5'></div>
+                        <div className='w-[0.1px] h-[13vh] bg-red-700 mr-5 mt-10'></div>
                         <div className='flex-col'>
-                            <h1 className='text-white text-3xl font-["Gelasio"] '>The Precious Catalog Archive</h1>
-                            <p className='text-red-700 text-md font-thin pt-2 '>Refining selection pathways for modern collectors.</p>
+                            <h1 className='text-white text-3xl font-["Gelasio"] mt-12 '>The Precious Catalog Archive</h1>
+                            <p className='text-[#D4AF37] text-md font-thin pt-5 '>Refining selection pathways for modern collectors.</p>
                         </div>
                     </div>
-                    <div className='h-[0.07px] w-full bg-gray-500 mt-5'></div>
-                    <div className='flex  flex-wrap justify-evenly  '>
-                        {/* <Card img={neck1} title="Royal Blue Stone Pendant " description="Beautiful blue stone pendant set with matching earrings, designed to add elegance and charm to any look. Perfect for parties, festive wear, and everyday styling." price="100" /> */}
-                        <Card img={set2} title="Elegant Leaf Drop 925 Silver Necklace Set" description="Necklace Set
+                    <div className='h-[0.07px] w-full bg-[#D4AF37] mt-5'></div>
+                    <div className='flex flex-wrap justify-evenly  '>
+                        {/* <Card img={set2} title="Elegant Leaf Drop 925 Silver Necklace Set" description="Necklace Set
 Gracefully crafted sterling silver necklace featuring sparkling leaf motifs with matching drop earrings. Perfect for weddings, festive occasions, and evening wear." price="₹24,999" />
                         <Card img={bangle} title="925 Sterling Silver Designer Bangles Collection" description="Premium handcrafted sterling silver bangles with intricate engraved patterns. Lightweight, elegant, and ideal for daily as well as festive wear." price="₹4,299 each" />
                         <Card img={neck2} title="Royal Crystal Drop Statement Necklace" description="Luxurious statement necklace adorned with brilliant stones and a pear-shaped center pendant. Designed to add timeless elegance to special occasions." price="₹34,999" />
                         <Card img={set3} title="Silver Geometric Necklace & Earrings Set" description="Modern geometric sterling silver necklace paired with matching earrings. A sophisticated design suitable for both western and ethnic outfits." price="₹21,499" />
 
-                        {/* <Card img={neck1} title="Royal Blue Stone Pendant " description="Beautiful blue stone pendant set with matching earrings, designed to add elegance and charm to any look. Perfect for parties, festive wear, and everyday styling." price="100" /> */}
                         <Card img={pan1} title="Silver Charm Pandora Bracelet " description="Elegant Pandora-inspired charm bracelet with premium charms and blue crystal accents, crafted for everyday luxury." extra="Beeds can be customized acc. to your choice." price="₹8,999" />
                         <Card img={pendant} title="Elegant Bow Pendant Set" description="Delicate bow-inspired pendant necklace with matching earrings, beautifully finished with sparkling stones for a graceful look." price="₹7,999" />
                         <Card img={ear1} title="Butterfly Drop Earrings" description="Premium butterfly-shaped earrings with dazzling stones and elegant teardrop dangles. Lightweight yet luxurious." price="₹3,999" />
                         <Card img={set1} title="Royal Floral Vine Necklace Set" description="Sophisticated floral vine necklace paired with matching earrings, designed for festive occasions and bridal celebrations." price="₹25,999" />
 
-                        {/* <Card img={neck1} title="Royal Blue Stone Pendant " description="Beautiful blue stone pendant set with matching earrings, designed to add elegance and charm to any look. Perfect for parties, festive wear, and everyday styling." price="100" /> */}
                         <Card img={ear2} title="Heart Drop Diamond Hoop Earrings" description="Elegant hoop earrings featuring brilliant heart-shaped dangling stones. A timeless design perfect for parties, anniversaries, and evening wear." price="₹6,999" />
                         <Card img={neck4} title="Royal Ruby Crystal Statement Necklace" description="A luxurious statement necklace adorned with deep ruby-toned stones and sparkling crystals, finished with a pear-cut centerpiece for a regal appearance." price="₹32,999" />
                         <Card img={neck5} title="Heritage Designer Silver Kada Pair" description="Premium handcrafted designer kadas with intricate oxidized detailing and gold-tone accents. A perfect blend of traditional craftsmanship and contemporary elegance." price="₹18,999" />
@@ -55,7 +55,18 @@ Gracefully crafted sterling silver necklace featuring sparkling leaf motifs with
                         <Card img={anklet1} title="Royal Peacock Silver Anklet" description="Intricately handcrafted peacock anklet embellished with premium stones and detailed silver craftsmanship. An exquisite accessory for bridal and festive attire." price="₹22,999" />
                         <Card img={anklet2} title="Traditional Ghungroo Silver Payal" description="Elegant handcrafted silver anklets featuring classic ghungroo detailing, designed for weddings, festive occasions, and ethnic elegance." price="₹15,999" />
                         <Card img={anklet3} title="Vintage Ghungroo Payal" description="Traditional oxidized silver payal adorned with intricate motifs and dangling ghungroo accents. A bold statement piece for ethnic and festive wear." price="₹13,999" />
-                        <Card img={anklet4} title="Royal Heritage Payal" description="Premium handcrafted heritage anklet with intricate square motifs and classic ghungroo detailing. Designed for brides and lovers of traditional jewelry." price="₹15,999" />
+                        <Card img={anklet4} title="Royal Heritage Payal" description="Premium handcrafted heritage anklet with intricate square motifs and classic ghungroo detailing. Designed for brides and lovers of traditional jewelry." price="₹15,999" /> */}
+
+
+                        <Card img={neck4} title="HEAVY SETS" category="sets"/>
+                        <Card img={anklet4} title="ANKLETS" category="anklets"/>
+                        <Card img={pendant} title="PENDANTS" category="pendants"/>
+
+                        <Card img={bangle} title="HAND & EAR ACCESSORIES " category="HAND & EAR ACCESSORIES" />
+
+
+
+
                     </div>
                 </div>
                 <div className=' w-[90%] m-[5%] bg-neutral-900/40 mt-30 pb-10 rounded-[10px] flex items-center border-gray-800 border ' id='care'>
@@ -88,23 +99,26 @@ Gracefully crafted sterling silver necklace featuring sparkling leaf motifs with
     )
 }
 function Card(props) {
+    const navigate = useNavigate();
     return (
-        <div className='flex flex-col justify-center hover:border-red-700 bg-neutral-900/40  w-full sm:w-[48%] lg:w-[23%] mt-20  rounded-[15px] overflow-hidden border-1 border-silver-bento/10 hover:shadow-[0_8px_20px_rgba(127,29,29,0.6)] brightness-120 hover:transition-shadow hover:duration-500 hover:brightness-140 hover:transition-ease-out'>
-            <img className='object-cover h-[40vh] w-[100%]' src={props.img} />
-            <h2 className='m-2 text-white text-xl hover:text-[#fb7185] '>{props.title}</h2>
-            <p className='ml-2 text-gray-400 font-thin text-xs mt-2 mb-1'>{props.description}</p>
-            <p className='ml-2 text-red-700 font-thin text-xs  mb-1'>{props.extra}</p>
+        // <div className='flex flex-col justify-center hover:border-red-700 bg-neutral-900/40  w-full sm:w-[48%] lg:w-[23%] mt-20  rounded-[15px] overflow-hidden border-1 border-silver-bento/10 hover:shadow-[0_8px_20px_rgba(127,29,29,0.6)] brightness-120 hover:transition-shadow hover:duration-500 hover:brightness-140 hover:transition-ease-out'>
+        //     <img className='object-cover h-[40vh] w-[100%]' src={props.img} />
+        //     <h2 className='m-2 text-white text-xl hover:text-[#fb7185] '>{props.title}</h2>
+        //     <p className='ml-2 text-gray-400 font-thin text-xs mt-2 mb-1'>{props.description}</p>
+        //     <p className='ml-2 text-red-700 font-thin text-xs  mb-1'>{props.extra}</p>
 
-            <div className='flex justify-between m-2'>
-                <h2 className='text-gray-500 text-md font-thin'>INQUIRE VALUE</h2>
-                <h2 className="text-white">{props.price}</h2>
+        //     <div className='flex justify-between m-2'>
+        //         <h2 className='text-gray-500 text-md font-thin'>INQUIRE VALUE</h2>
+        //         <h2 className="text-white">{props.price}</h2>
+        //     </div>
+        //     <button className="text-gray-300 text-center border-1 border-gray-500 rounded-[9px] p-3 pt-1 pb-1 m-3 font-thin hover:text-red-700 font-['Gelasio'] "><i className="fa-regular fa-eye text-red-700 pr-8 "></i>BUY NOW</button>
+
+        // </div>
+      
+            <div  onClick={() => navigate(`/category/${props.category}`)} className='flex flex-col justify-center items-center hover:border-red-700 bg-neutral-900/40 pt-5 pb-5 p-2 w-full sm:w-[48%] lg:w-[23%] mt-30  rounded-[15px] overflow-hidden border-1 border-silver-bento/10 hover:shadow-[0_8px_20px_rgba(127,29,29,0.6)] brightness-120 hover:transition-shadow hover:duration-500 hover:brightness-140 hover:transition-ease-out'>
+                <img className='object-cover h-[40vh] w-full' src={props.img} />
+                <h2 className='m-2 text-white text-xl hover:text-[#fb7185] '>{props.title}</h2>
             </div>
-            <button className="text-gray-300 text-center border-1 border-gray-500 rounded-[9px] p-3 pt-1 pb-1 m-3 font-thin hover:text-red-700 font-['Gelasio'] "><i className="fa-regular fa-eye text-red-700 pr-8 "></i><Link to={`/product/${product.id}`}>
-  BUY NOW
-</Link>
     
-</button>
-
-        </div>
     );
 }
