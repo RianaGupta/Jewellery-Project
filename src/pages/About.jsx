@@ -4,12 +4,12 @@ export default function About() {
     return (
         <div>
             <div className="bg-[#4A0000] align-center text-center lg:text-left lg:w-full xl:w-auto">
-                <h2 className=" text-[30px]  tracking-[3px] font-light pt-[15px] pr-0 pb-[15px] pl-[50px] [text-shadow:3px_2px_4px_rgba(0,0,0,0.65)] justify-stretch brightness-300 font-['Cormorant_Garamond']">
+                <h2 className=" text-[30px] text-center  tracking-[3px] font-light pt-[30px] pr-0 pb-[20px] pl-[50px] [text-shadow:3px_2px_4px_rgba(0,0,0,0.65)] justify-stretch brightness-300 font-['Cormorant_Garamond']">
                     <span className="text-[rgb(219_210_210)]  " >LUSTRE</span>
                     <span className="text-[rgb(234_8_8)]  " >ASH</span>
                 </h2>
             </div>
-            <div className='bg-[#FCFAF6] h-[80vh] w-full pl-10 pr-10  flex'>
+            <div className='bg-[#FCFAF6] h-[80vh] w-full pl-10 pr-10 pt-5  flex'>
                 <div className='w-[60%] p-20'>
                     <p className='text-[#C89B3C] mb-3'>ABOUT LUSTREASH</p>
                     <h1 className='text-black text-6xl font-normal mb-5 tracking-[2px] font-["Cormorant_Garamond"]'>More Than Jewellery,</h1>
