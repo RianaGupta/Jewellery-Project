@@ -104,7 +104,7 @@ const products = [
   {
     id: 10,
     category: "pendants",
-    image: { pendant },
+    image:  pendant ,
     title: "Elegant Bow Pendant Set",
     description: "Delicate bow-inspired pendant necklace with matching earrings, beautifully finished with sparkling stones for a graceful look.",
     price: "₹7,999"
