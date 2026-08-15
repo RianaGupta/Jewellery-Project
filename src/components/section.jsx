@@ -4,6 +4,7 @@ import purse from '../assets/purse.png';
 import special from "../assets/special.png";
 import { Link } from 'react-router-dom';
 import Purse from '../pages/purse';
+import Style from '../pages/style';
 export default function Section() {
   return (
     <div>
@@ -119,7 +120,7 @@ export default function Section() {
               <p className='text-red-700 font-thin text-xs sm:text-md pl-5  lg:p-5 tracking-[2px] font-["Gelasio"]'>INTERACTIVE GUIDE</p>
               <h1 className='text-white text-3xl pl-5 font-["Gelasio"] font-thin mt-2 sm:mt-0'>Find Your <span className='font-["Tangerine"] text-4xl'>Signature</span></h1>
               <p className='text-gray-400 pl-5 pb-10 font-thin text-md'>Take our 4-point design quiz to map your face shape, metal preferences & style aura perfectly.</p>
-              <a href="" className='m-[15px]  text-white hover:text-red-700 font-thin '>INQUIRE MATCHER NOW <i className="fa-solid fa-arrow-right font-thin"></i></a>
+              <a href={"Style"} className='m-[15px]  text-white hover:text-red-700 font-thin '>INQUIRE MATCHER NOW <i className="fa-solid fa-arrow-right font-thin"></i></a>
             </div>
             <div className="w-full lg:w-3/4 rounded-3xl border border-red-900 bg-cover bg-center flex flex-col ">
               <div className='flex justify-between'>

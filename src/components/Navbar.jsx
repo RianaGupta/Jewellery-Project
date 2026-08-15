@@ -31,12 +31,11 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <ul className="hidden lg:flex gap-[30px] items-center font-['Cormorant_Garamond']">
           <li>
-            <a
-              className="text-[13px] tracking-[3px] text-[rgb(206_199_199)] hover:text-white hover:border-b border-red-500"
-              href="#"
-            >
+            <Link
+              to={"/Style"}
+              className="text-[13px] tracking-[3px] text-[rgb(206_199_199)] hover:text-white hover:border-b border-red-500">
               STYLE QUIZ
-            </a>
+            </Link>
           </li>
 
           <li>
@@ -86,9 +85,8 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         <div
-          className={`absolute top-[70px] left-0 w-full bg-[rgb(84,2,2)] z-[999] overflow-hidden transition-all duration-500 ${
-            open ? "max-h-[500px]" : "max-h-0"
-          } lg:hidden`}
+          className={`absolute top-[70px] left-0 w-full bg-[rgb(84,2,2)] z-[999] overflow-hidden transition-all duration-500 ${open ? "max-h-[500px]" : "max-h-0"
+            } lg:hidden`}
         >
           <ul className="flex flex-col items-center gap-6 py-6 font-['Cormorant_Garamond']">
 
