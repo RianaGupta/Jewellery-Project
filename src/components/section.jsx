@@ -4,7 +4,7 @@ import purse from '../assets/purse.png';
 import special from "../assets/special.png";
 import { Link } from 'react-router-dom';
 import Purse from '../pages/purse';
-import Style from '../pages/style';
+import Style from '../pages/Style';
 export default function Section() {
   return (
     <div>

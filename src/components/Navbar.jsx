@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import Style from "../pages/Style";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -92,7 +92,7 @@ export default function Navbar() {
 
             <li>
               <a
-                href="#"
+                href="{Style}"
                 onClick={() => setOpen(false)}
                 className="text-white"
               >
